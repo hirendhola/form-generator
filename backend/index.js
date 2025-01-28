@@ -7,7 +7,7 @@ const app = express();
 dotenv.config();
 
 app.use(cors({
-  origin: 'https://form-generator-cc2y.vercel.app',
+  origin: process.env.ORIGIN_URL,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
